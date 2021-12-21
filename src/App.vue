@@ -4,11 +4,11 @@
     <div class="formulario">
       <div class="contenedor-formulario">
         <div class="row">
-          <label>Titulo:</label>
+          <label>Titulo</label>
           <input v-model="formulario.titulo" type="text" />
         </div>
         <div class="row">
-          <label>Filtro:</label>
+          <label>Filtro</label>
           <select v-model="formulario.filtro">
             <option v-for="filtro in filtros" :key="filtro" :value="filtro">
               {{ filtro }}
@@ -16,7 +16,7 @@
           </select>
         </div>
         <div class="row">
-          <label>Color:</label>
+          <label>Color</label>
           <select v-model="formulario.color">
             <option
               v-for="(color, index) in colores"
@@ -29,7 +29,7 @@
           <div :style="muestraColor" class="cajita-color"></div>
         </div>
         <div class="row">
-          <label>Tamaño:</label>
+          <label>Tamaño</label>
           <input
             @keydown="soloNumeros"
             v-model="formulario.tamano"
